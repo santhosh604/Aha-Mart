@@ -4,6 +4,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 
+import "swiper/css";
+import "swiper/css/pagination";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,11 +33,9 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} antialiased`}
     >
       <body className="bg-gray-100 min-h-screen flex flex-col">
-          <Header />
-          <main className="max-w-7xl mx-auto flex-1 p-4 pb-20 pt-27">
+          <main className="w-full max-w-7xl mx-auto flex-1 p-5 pb-20">
             {children}
           </main>
-          <Navbar />
       </body>
     </html>
   );
