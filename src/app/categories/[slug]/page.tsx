@@ -37,8 +37,7 @@ export default async function CategoryPage({params}: Props) {
     const categoryName = categories.find((item) => item.slug === slug)?.name;
   
     const products = await getProductsByCategory(categoryName);
-    console.log(products.length);
-
+  
     return (
         <>
             <div className="flex flex-row justify-between items-center fixed top-0 left-0 w-full bg-gray-200 px-5 md:px-10 py-3 z-50">

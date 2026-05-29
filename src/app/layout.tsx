@@ -40,3 +40,19 @@ export default function RootLayout({
     </html>
   );
 }
+ 
+
+/*
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    >
+      <body className="bg-gray-100 min-h-screen flex flex-col">
+          <main className="w-full max-w-7xl mx-auto flex-1 p-5 pb-20">
+            {children}
+          </main>
+      </body>
+    </html>
+  );
+*/
